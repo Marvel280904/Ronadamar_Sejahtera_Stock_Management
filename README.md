@@ -1,3 +1,86 @@
+# Stock Management System
+
+A comprehensive stock management system built with Laravel for inventory tracking and management.
+
+## 🚀 Features
+
+- **Product Management** - Full CRUD operations for products
+- **Stock Control** - Add/Reduce stock with history tracking
+- **RESTful API** - Complete API endpoints for integration
+- **Real-time Notifications** - Stock alerts and monthly reminders
+- **PDF Reports** - Generate stock reports
+- **User Authentication** - Role-based access control
+- **Modern UI** - Responsive design with Tailwind CSS
+
+## 🛠️ Technology Stack
+
+- **Backend:** Laravel 12, PHP 8.2+
+- **Frontend:** Blade Templates, Tailwind CSS, Alpine.js
+- **Database:** MySQL
+- **Authentication:** Laravel Sanctum
+- **PDF Generation:** DomPDF
+
+## 📦 API Endpoints
+
+### Authentication
+- `POST /api/login` - User login
+- `POST /api/logout` - User logout
+- `GET /api/user` - Get user info
+
+### Products
+- `GET /api/products` - List all products
+- `GET /api/products/{id}` - Get product details
+- `POST /api/products` - Create new product
+- `PUT /api/products/{id}` - Update product
+- `DELETE /api/products/{id}` - Delete product
+
+### Stock Management
+- `POST /api/products/{id}/add-stock` - Add stock
+- `POST /api/products/{id}/reduce-stock` - Reduce stock
+
+### Categories
+- `GET /api/categories` - List all categories
+
+## 🏁 Installation
+
+1. **Clone the repository:**
+git clone https://github.com/USERNAME/stock-management.git
+cd stock-management
+
+2. **Install dependencies:**
+composer install
+npm install
+
+3. **Setup environment:**
+cp .env.example .env
+php artisan key:generate
+
+4. **Configure database in .env**
+DB_PASSWORD= isi dengan password anda
+
+5. **Run migrations and seeders:**
+php artisan migrate --seed
+php artisan db:seed --class=CategorySeeder
+
+6. **Start development server:**
+php artisan serve
+
+
+### Default Login
+Email: admin@ronadamar.com
+Password: admin123
+
+### Usage
+**Web Interface**
+Access http://localhost:8000 for the web admin
+Navigate to different sections via sidebar
+
+**API Testing**
+Access http://localhost:8000/api-tester for API testing interface
+Use the interactive tester to test all endpoints
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -20,35 +103,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
 ## Security Vulnerabilities
 
