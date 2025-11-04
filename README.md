@@ -44,40 +44,40 @@ A comprehensive stock management system built with Laravel for inventory trackin
 ## 🏁 Installation
 
 1. **Clone the repository:**
-git clone https://github.com/USERNAME/stock-management.git
-cd stock-management
+- git clone https://github.com/USERNAME/stock-management.git
+- cd stock-management
 
 2. **Install dependencies:**
-composer install
-npm install
+- composer install
+- npm install
 
 3. **Setup environment:**
-cp .env.example .env
-php artisan key:generate
+- cp .env.example .env
+- php artisan key:generate
 
 4. **Configure database in .env**
-DB_PASSWORD= isi dengan password anda
+- DB_PASSWORD= isi dengan password anda
 
 5. **Run migrations and seeders:**
-php artisan migrate --seed
-php artisan db:seed --class=CategorySeeder
+- php artisan migrate --seed
+- php artisan db:seed --class=CategorySeeder
 
 6. **Start development server:**
-php artisan serve
+- php artisan serve
 
 
 ### Default Login
-Email: admin@ronadamar.com
-Password: admin123
+- Email: admin@ronadamar.com
+- Password: admin123
 
 ### Usage
 **Web Interface**
-Access http://localhost:8000 for the web admin
-Navigate to different sections via sidebar
+- Access http://localhost:8000 for the web admin
+- Navigate to different sections via sidebar
 
 **API Testing**
-Access http://localhost:8000/api-tester for API testing interface
-Use the interactive tester to test all endpoints
+- Access http://localhost:8000/api-tester for API testing interface
+- Use the interactive tester to test all endpoints
 
 
 
